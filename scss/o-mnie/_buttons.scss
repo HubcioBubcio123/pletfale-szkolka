@@ -1,0 +1,35 @@
+@use 'variables' as *;
+
+.btn {
+  display: inline-block;
+  padding: 14px 24px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 15px;
+  transition: background .2s ease, border-color .2s ease;
+}
+
+.btn--solid {
+  background: $color-button-bg;
+  color: $color-button-text;
+}
+
+.btn--solid:hover {
+  background: $color-button-bg-hover;
+  color: $color-button-text;
+}
+
+.btn--outline {
+  border: 1px solid $color-button-outline-border;
+  color: $color-text;
+}
+
+.btn--outline:hover {
+  border-color: $color-text;
+}
+
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}

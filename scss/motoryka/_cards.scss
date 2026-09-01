@@ -1,0 +1,42 @@
+@use 'variables' as *;
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  background: $color-card-bg;
+  border: 1px solid $color-border;
+  border-radius: $radius-card;
+  padding: 28px;
+  transition: transform .25s ease, border-color .25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: $color-border-strong;
+}
+
+.card__index {
+  font-family: $font-mono;
+  font-size: 12px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: $color-accent;
+}
+
+.card__title {
+  font-family: $font-heading;
+  font-weight: 600;
+  font-size: 24px;
+  margin: 14px 0 10px;
+}
+
+.card__desc {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.65;
+  color: $color-text-tertiary;
+}

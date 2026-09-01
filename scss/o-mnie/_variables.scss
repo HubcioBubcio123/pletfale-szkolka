@@ -1,0 +1,37 @@
+// Typografia
+$font-heading: 'Space Grotesk', sans-serif;
+$font-body: Inter, system-ui, sans-serif;
+$font-mono: 'JetBrains Mono', monospace;
+
+// Layout
+$container-max: 1180px;
+$container-padding: clamp(20px, 5vw, 48px);
+$radius-card: 16px;
+$radius-card-sm: 12px;
+$radius-pill: 999px;
+
+// Kolory — O mnie (neutralny hub)
+$color-bg: #F7F6F2;
+$color-text: #1B1B1F;
+$color-text-secondary: #43434C;
+$color-text-tertiary: #5A5A63;
+$color-text-muted: #6B6B74;
+$color-card-bg: #FFFEFB;
+$color-border: rgba(27, 27, 31, .1);
+$color-border-soft: rgba(27, 27, 31, .08);
+$color-border-strong: rgba(27, 27, 31, .2);
+$color-eyebrow-text: #3A3A42;
+$color-accent: #1D6FE0;
+
+$color-button-bg: #1B1B1F;
+$color-button-bg-hover: #000000;
+$color-button-text: #F7F6F2;
+$color-button-outline-border: rgba(27, 27, 31, .25);
+
+// Gradienty kart usług (linkują do podstron)
+$gradient-pletfale: linear-gradient(160deg, #0B3D91, #1D6FE0);
+$gradient-fizjoterapia: linear-gradient(160deg, #4B2E83, #6B3FA0);
+$gradient-motoryka: linear-gradient(160deg, #18181A, #2A2622);
+$accent-pletfale: #6FD1E8;
+$accent-fizjoterapia: #C9A6F5;
+$accent-motoryka: #E0812F;

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Płetfale — nauka pływania | [Imię Nazwisko]</title>
+<meta name="description" content="[Krótki opis: zajęcia nauki pływania dla dzieci, dorosłych i zaawansowanych.]">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="scss/pletfale/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="site-header__inner">
+    <a href="index.html" class="site-header__logo"><span class="site-header__dot"></span>Płetfale</a>
+    <div class="site-header__nav">
+      <a href="#oferta">Oferta</a>
+      <a href="#grupy">Grupy</a>
+      <a href="#opinie">Opinie</a>
+      <a href="#kontakt">Kontakt</a>
+      <a href="index.html" class="site-header__back">← O mnie</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero__inner">
+    <span class="eyebrow">Nauka pływania</span>
+    <h1 class="hero__title">Woda przestaje być przeszkodą.</h1>
+    <p class="hero__desc">[Zajęcia indywidualne i w małych grupach na basenie [nazwa obiektu]. Pracuję z osobami, które zaczynają od zera, i z tymi, które chcą poprawić technikę.]</p>
+    <div class="btn-group">
+      <a href="#kontakt" class="btn btn--solid">Umów pierwsze zajęcia</a>
+      <a href="#grupy" class="btn-link">Zobacz grupy →</a>
+    </div>
+  </div>
+  <div class="hero__waves" aria-hidden="true">
+    <svg viewBox="0 0 1440 160" preserveAspectRatio="none">
+      <path d="M0,90 C120,50 240,130 360,90 C480,50 600,130 720,90 C840,50 960,130 1080,90 C1200,50 1320,130 1440,90 L1440,160 L0,160 Z" fill="#6FD1E8"></path>
+    </svg>
+    <svg viewBox="0 0 1440 160" preserveAspectRatio="none">
+      <path d="M0,110 C160,80 260,150 420,116 C560,86 660,150 820,116 C980,82 1080,150 1240,114 C1340,92 1400,110 1440,104 L1440,160 L0,160 Z" fill="#0B3D91"></path>
+    </svg>
+    <svg viewBox="0 0 1440 160" preserveAspectRatio="none">
+      <path d="M0,128 C180,104 300,146 480,128 C660,110 780,148 960,130 C1140,112 1280,140 1440,126 L1440,161 L0,161 Z" fill="#07275C"></path>
+    </svg>
+  </div>
+</section>
+
+<main class="container">
+
+  <section id="grupy" class="section">
+    <h2 class="section__title">Dla kogo</h2>
+    <p class="section__eyebrow">Trzy grupy zajęciowe</p>
+    <div class="card-grid">
+      <article class="card">
+        <div class="card__index">01</div>
+        <h3 class="card__title">Dzieci</h3>
+        <p class="card__desc">[Oswojenie z wodą, nauka oddychania i pierwsze metry samodzielnego pływania. Zajęcia od [wiek] lat.]</p>
+        <div class="card__meta">[45 min · od 000 zł]</div>
+      </article>
+      <article class="card">
+        <div class="card__index">02</div>
+        <h3 class="card__title">Dorośli</h3>
+        <p class="card__desc">[Nauka od podstaw bez pośpiechu, praca z lękiem przed wodą oraz korekta techniki kraula i grzbietu.]</p>
+        <div class="card__meta">[60 min · od 000 zł]</div>
+      </article>
+      <article class="card">
+        <div class="card__index">03</div>
+        <h3 class="card__title">Zaawansowani</h3>
+        <p class="card__desc">[Szlifowanie czterech stylów, praca nad startem i nawrotem, przygotowanie do zawodów i triathlonu.]</p>
+        <div class="card__meta">[60 min · od 000 zł]</div>
+      </article>
+    </div>
+  </section>
+
+  <section id="oferta" class="section">
+    <div class="card-grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(24px,4vw,56px)">
+      <div>
+        <h2 class="section__title">Jak wyglądają zajęcia</h2>
+        <p class="contact__desc" style="margin:16px 0 0">[Opis przebiegu zajęć: rozmowa i ocena poziomu, plan na cykl spotkań, praca nad techniką, informacja zwrotna po każdym treningu.]</p>
+      </div>
+      <div class="price-list">
+        <div class="price-list__row"><span>Zajęcia indywidualne</span><span class="price-list__value">[000 zł]</span></div>
+        <div class="price-list__row"><span>Duet (2 osoby)</span><span class="price-list__value">[000 zł]</span></div>
+        <div class="price-list__row"><span>Karnet 10 wejść</span><span class="price-list__value">[000 zł]</span></div>
+        <div class="price-list__row"><span>Basen</span><span class="price-list__value price-list__value--muted">[nazwa obiektu]</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="opinie" class="section">
+    <h2 class="section__title">Opinie</h2>
+    <div class="testimonial-grid">
+      <figure class="testimonial">
+        <blockquote class="testimonial__quote">„[Opinia rodzica lub kursanta — dwa, trzy zdania.]”</blockquote>
+        <figcaption class="testimonial__cite">[Anna K.]</figcaption>
+      </figure>
+      <figure class="testimonial">
+        <blockquote class="testimonial__quote">„[Opinia rodzica lub kursanta — dwa, trzy zdania.]”</blockquote>
+        <figcaption class="testimonial__cite">[Piotr M.]</figcaption>
+      </figure>
+      <figure class="testimonial">
+        <blockquote class="testimonial__quote">„[Opinia rodzica lub kursanta — dwa, trzy zdania.]”</blockquote>
+        <figcaption class="testimonial__cite">[Ewa L.]</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="kontakt" class="contact">
+    <div class="contact__grid">
+      <div>
+        <h2 class="section__title">Umów pierwsze zajęcia</h2>
+        <p class="contact__desc">[Napisz, kogo dotyczą zajęcia i jaki jest obecny poziom — odpowiem z propozycją terminów.]</p>
+        <a href="mailto:kontakt@example.com" class="btn btn--solid">Napisz wiadomość</a>
+      </div>
+      <div class="contact__details">
+        <a href="mailto:kontakt@example.com">[kontakt@example.com]</a>
+        <a href="tel:+48000000000">[+48 000 000 000]</a>
+        <span>[basen — ul. Przykładowa 1, Miasto]</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <span>© [2026] [Imię Nazwisko]</span>
+    <span class="site-footer__links">
+      <a href="index.html">O mnie</a>
+      <a href="fizjoterapia.html">Fizjoterapia</a>
+      <a href="motoryka.html">Motoryka</a>
+    </span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

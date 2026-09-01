@@ -1,0 +1,78 @@
+@use 'variables' as *;
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  background: $hero-gradient;
+}
+
+.hero__inner {
+  position: relative;
+  max-width: $container-max;
+  margin: 0 auto;
+  padding: clamp(56px, 9vw, 124px) $container-padding clamp(48px, 7vw, 96px);
+}
+
+.hero__title {
+  font-family: $font-heading;
+  font-weight: 700;
+  font-size: clamp(40px, 7vw, 78px);
+  line-height: 1.02;
+  letter-spacing: -.035em;
+  margin: 22px 0 20px;
+  max-width: 17ch;
+  text-wrap: balance;
+}
+
+.hero__desc {
+  font-size: clamp(16px, 1.6vw, 20px);
+  line-height: 1.6;
+  color: $color-text-secondary;
+  max-width: 54ch;
+  margin: 0 0 34px;
+  text-wrap: pretty;
+}
+
+// "Oddychające" koncentryczne okręgi w rogu hero — czysty CSS, bez JS
+.hero__rings {
+  position: absolute;
+  top: -12%;
+  right: -6%;
+  width: min(760px, 105vw);
+  aspect-ratio: 1;
+  pointer-events: none;
+}
+
+.ring {
+  position: absolute;
+  border: 1px solid $color-accent;
+  border-radius: 50%;
+  opacity: .3;
+  display: block;
+  animation: breathe 9s ease-in-out infinite;
+}
+
+.ring:nth-child(1) { inset: 0%; }
+.ring:nth-child(2) { inset: 12%; animation-delay: .8s; }
+.ring:nth-child(3) { inset: 24%; animation-delay: 1.6s; }
+.ring:nth-child(4) { inset: 36%; animation-delay: 2.4s; }
+.ring:nth-child(5) { inset: 48%; animation-delay: 3.2s; }
+
+// Zdjęcie trenera po prawej — nad okręgami (dalej w kodzie = wyżej na stosie)
+.hero__photo {
+  position: absolute;
+  right: clamp(8px, 4vw, 56px);
+  bottom: 0;
+  height: clamp(260px, 38vw, 520px);
+  width: auto;
+  object-fit: contain;
+  object-position: bottom;
+  pointer-events: none;
+  filter: drop-shadow(0 24px 40px rgba(0, 0, 0, .35));
+}
+
+@media (max-width: 900px) {
+  .hero__photo {
+    display: none;
+  }
+}

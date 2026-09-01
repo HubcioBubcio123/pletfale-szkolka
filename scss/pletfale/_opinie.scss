@@ -1,0 +1,29 @@
+@use 'variables' as *;
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.testimonial {
+  margin: 0;
+  background: $color-card-bg;
+  border: 1px solid rgba(111, 209, 232, .2);
+  border-radius: 14px;
+  padding: 26px;
+}
+
+.testimonial__quote {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.6;
+  text-wrap: pretty;
+}
+
+.testimonial__cite {
+  font-family: $font-mono;
+  font-size: 13px;
+  color: $color-text-muted;
+  margin-top: 18px;
+}

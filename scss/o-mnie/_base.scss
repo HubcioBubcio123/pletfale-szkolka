@@ -1,0 +1,77 @@
+@use 'variables' as *;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: $color-bg;
+  color: $color-text;
+  font-family: $font-body;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: $color-text;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $color-accent;
+}
+
+:focus-visible {
+  outline: 3px solid $color-accent;
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: $container-max;
+  margin: 0 auto;
+  padding: 0 $container-padding;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-family: $font-mono;
+  font-size: 12px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  padding: 7px 12px;
+  border: 1px solid $color-border-strong;
+  border-radius: $radius-pill;
+  color: $color-eyebrow-text;
+}
+
+.section {
+  padding: clamp(40px, 6vw, 72px) 0;
+  border-top: 1px solid $color-border;
+}
+
+.section__title {
+  font-family: $font-heading;
+  font-weight: 600;
+  font-size: clamp(24px, 3vw, 34px);
+  letter-spacing: -.02em;
+  margin: 0 0 8px;
+}
+
+.section__eyebrow {
+  font-family: $font-mono;
+  font-size: 12px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: $color-text-muted;
+  margin: 0 0 32px;
+}

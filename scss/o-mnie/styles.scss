@@ -1,0 +1,13 @@
+// Punkt wejścia dla strony "O mnie".
+// Live Sass Compiler kompiluje ten plik do styles.css w tym samym folderze.
+// Pliki zaczynające się od "_" to partiale — nie są kompilowane osobno.
+
+@use 'variables' as *;
+@use 'base';
+@use 'buttons';
+@use 'header';
+@use 'hero';
+@use 'cards';
+@use 'opinie';
+@use 'kontakt';
+@use 'footer';

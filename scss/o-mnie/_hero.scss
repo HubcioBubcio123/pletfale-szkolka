@@ -1,0 +1,51 @@
+@use 'variables' as *;
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: clamp(28px, 5vw, 64px);
+  align-items: center;
+  padding: clamp(48px, 8vw, 104px) 0 clamp(40px, 6vw, 80px);
+}
+
+.hero__title {
+  font-family: $font-heading;
+  font-weight: 700;
+  font-size: clamp(38px, 6vw, 66px);
+  line-height: 1.02;
+  letter-spacing: -.03em;
+  margin: 22px 0 20px;
+  text-wrap: balance;
+}
+
+.hero__desc {
+  font-size: clamp(16px, 1.5vw, 19px);
+  line-height: 1.6;
+  color: $color-text-secondary;
+  max-width: 52ch;
+  margin: 0 0 32px;
+  text-wrap: pretty;
+}
+
+.hero__photo {
+  aspect-ratio: 4 / 5;
+  border-radius: $radius-card;
+  overflow: hidden;
+  border: 1px solid $color-border-strong;
+  background: repeating-linear-gradient(135deg, #ECEAE3 0 12px, #E3E0D7 12px 24px);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 20px;
+}
+
+.hero__photo-label {
+  font-family: $font-mono;
+  font-size: 12px;
+  letter-spacing: .06em;
+  color: $color-text-muted;
+  background: $color-bg;
+  border: 1px solid $color-border-strong;
+  padding: 8px 12px;
+  border-radius: 8px;
+}

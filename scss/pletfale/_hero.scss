@@ -1,0 +1,68 @@
+@use 'variables' as *;
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  background: $hero-gradient;
+}
+
+.hero__inner {
+  max-width: $container-max;
+  margin: 0 auto;
+  padding: clamp(56px, 9vw, 120px) $container-padding clamp(120px, 16vw, 200px);
+}
+
+.hero__title {
+  font-family: $font-heading;
+  font-weight: 700;
+  font-size: clamp(40px, 7vw, 78px);
+  line-height: 1;
+  letter-spacing: -.035em;
+  margin: 22px 0 20px;
+  max-width: 16ch;
+  text-wrap: balance;
+}
+
+.hero__desc {
+  font-size: clamp(16px, 1.6vw, 20px);
+  line-height: 1.6;
+  color: $color-text-secondary;
+  max-width: 54ch;
+  margin: 0 0 34px;
+  text-wrap: pretty;
+}
+
+// Fale na dole hero — czysty SVG + CSS, bez JS
+.hero__waves {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: clamp(90px, 13vw, 170px);
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.hero__waves svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+}
+
+.hero__waves svg:nth-child(1) {
+  animation: wave-a 18s linear infinite;
+  opacity: .35;
+}
+
+.hero__waves svg:nth-child(2) {
+  animation: wave-b 26s linear infinite;
+  opacity: .6;
+}
+
+.hero__waves svg:nth-child(3) {
+  bottom: -1px;
+  animation: wave-a 34s linear infinite;
+  opacity: 1;
+}

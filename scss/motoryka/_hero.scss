@@ -1,0 +1,41 @@
+@use 'variables' as *;
+
+// Ukośna tekstura w prawej części tła — czysty CSS, bez obrazków
+.hero__texture {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: min(58%, 760px);
+  height: 100%;
+  pointer-events: none;
+  background: repeating-linear-gradient(72deg, rgba(224, 129, 47, .16) 0 1px, transparent 1px 26px);
+  mask-image: linear-gradient(to left, #000, transparent);
+  -webkit-mask-image: linear-gradient(to left, #000, transparent);
+}
+
+.hero {
+  padding: clamp(56px, 9vw, 132px) 0 clamp(48px, 7vw, 88px);
+}
+
+.hero__title {
+  font-family: $font-heading;
+  font-weight: 700;
+  font-size: clamp(42px, 7.6vw, 84px);
+  line-height: .98;
+  letter-spacing: -.04em;
+  margin: 24px 0 22px;
+  max-width: 20ch;
+}
+
+.hero__title span {
+  color: $color-accent;
+}
+
+.hero__desc {
+  font-size: clamp(16px, 1.6vw, 20px);
+  line-height: 1.6;
+  color: $color-text-secondary;
+  max-width: 52ch;
+  margin: 0 0 34px;
+  text-wrap: pretty;
+}

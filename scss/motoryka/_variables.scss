@@ -1,0 +1,26 @@
+// Typografia
+$font-heading: 'Space Grotesk', sans-serif;
+$font-body: Inter, system-ui, sans-serif;
+$font-mono: 'JetBrains Mono', monospace;
+
+// Layout
+$container-max: 1180px;
+$container-padding: clamp(20px, 5vw, 48px);
+$radius-card: 16px;
+$radius-pill: 999px;
+
+// Kolory — Motoryka (ciemny/bursztynowy)
+$color-bg: #18181A;
+$color-text: #F2EFEA;
+$color-text-secondary: rgba(242, 239, 234, .76);
+$color-text-tertiary: rgba(242, 239, 234, .72);
+$color-text-muted: #9A968F;
+$color-text-faint: #6E6A64;
+$color-card-bg: #1F1F22;
+$color-border: rgba(242, 239, 234, .1);
+$color-border-header: rgba(224, 129, 47, .22);
+$color-border-strong: rgba(224, 129, 47, .5);
+$color-accent: #E0812F;
+
+$color-button-bg: #E0812F;
+$color-button-text: #18181A;

@@ -1,0 +1,25 @@
+// Typografia
+$font-heading: 'Space Grotesk', sans-serif;
+$font-body: Inter, system-ui, sans-serif;
+$font-mono: 'JetBrains Mono', monospace;
+
+// Layout
+$container-max: 1180px;
+$container-padding: clamp(20px, 5vw, 48px);
+$radius-card: 16px;
+$radius-pill: 999px;
+
+// Kolory — Fizjoterapia (fiolet)
+$color-bg: #2C1A4F;
+$hero-gradient: radial-gradient(110% 80% at 80% 0%, #6B3FA0 0%, #4B2E83 48%, #2C1A4F 100%);
+$color-text: #F1E9FB;
+$color-text-secondary: rgba(241, 233, 251, .82);
+$color-text-tertiary: rgba(241, 233, 251, .78);
+$color-text-muted: #BCA6DC;
+$color-card-bg: rgba(255, 255, 255, .07);
+$color-border: rgba(201, 166, 245, .18);
+$color-border-strong: rgba(201, 166, 245, .45);
+$color-accent: #C9A6F5;
+
+$color-button-bg: #C9A6F5;
+$color-button-text: #2C1A4F;
